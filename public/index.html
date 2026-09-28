@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriScan - Rastreador de Nutrición</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script type="module" src="src/app.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="container">
+      <h1 class="logo">🥗 NutriScan</h1>
+      <nav class="nav">
+        <button class="nav-btn active" data-view="home">Inicio</button>
+        <button class="nav-btn" data-view="scan">Escanear</button>
+        <button class="nav-btn" data-view="meals">Comidas</button>
+        <button class="nav-btn" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="history">Historial</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <!-- Views will be rendered here -->
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>NutriScan - Gratis y sin anuncios. Cuida tu dieta.</p>
+    </div>
+  </footer>
+
+  <!-- Modal for product editing -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Editar Producto</h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Loading overlay -->
+  <div id="loading" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <p id="loading-text">Procesando imagen...</p>
+  </div>
+</body>
+</html>
