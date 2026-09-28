@@ -1,0 +1,17 @@
+{
+  "name": "nutri-scan",
+  "version": "1.0.0",
+  "description": "Free nutrition tracker with OCR for food labels",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve public",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": ["nutrition", "ocr", "food", "tracker"],
+  "author": "NutriScan",
+  "license": "MIT",
+  "dependencies": {
+    "tesseract.js": "^5.0.0"
+  }
+}
